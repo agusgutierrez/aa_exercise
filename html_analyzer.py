@@ -55,7 +55,9 @@ if __name__ == "__main__":
         in_3 = input("Please, insert the name of the file (stored in ./magazine_article/): ")
         words = txt_analyzer("./magazine_article/" + in_3)
 
-    if check_if_exist(words, "./letter/my_letter.txt"):
+    in_4 = input("Please, insert the name of the letter (stored in ./letter/): ")
+
+    if check_if_exist(words, "./letter/" + in_4):
         print("We can do it")
     else:
         print("We can NOT do it")
